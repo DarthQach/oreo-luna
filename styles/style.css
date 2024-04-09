@@ -17,7 +17,7 @@ body {
 }
 
 .content {
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.5);
   border-radius: 15px;
   padding: 20px;
   margin-top: 20px;
@@ -49,4 +49,10 @@ img {
 
 .first-column {
   width: 30%;
+}
+
+.btn-next:disabled {
+  background-color: #ccc; /* Gray color */
+  border-color: #ccc;
+  color: #666; /* Darker text color for contrast */
 }

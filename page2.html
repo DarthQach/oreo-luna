@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oreo y Luna</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <img src="images/your-image.jpg" alt="Story Image" class="img-fluid">
+            <div class="content">
+                <p>First paragraph of the story goes here. This is where you introduce the setting or characters.</p>
+                <p>Second paragraph of the story continues here. You might introduce a problem or an event that kicks off the adventure.</p>
+                <button class="btn-next" onclick="goToNextPage()">Siguiente</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+    function goToNextPage() {
+        // Assuming your next page is named 'page2.html', update as necessary
+        window.location.href = 'page3.html';
+    }
+</script>
+
+</body>
+</html>

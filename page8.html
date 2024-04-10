@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oreo y Luna</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      8
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <img src="./images/3.jpeg" alt="Story Image" class="img-fluid" />
+          <div class="content">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td class="first-column">Jaén</td>
+                  <td>Durante mis paseos por la ciudad paso todos los días por esa casa.</td>
+                </tr>
+                <tr>
+                  <td class="first-column">José Angel</td>
+                  <td>Como me gustaría vivir ahí.</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="d-flex justify-content-between">
+              <button class="btn-next" onclick="goToPreviousPage()">Atras</button>
+              <button id="nextButton" class="btn-next" onclick="goToNextPage()" disabled>Siguiente</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.5/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+      function goToPreviousPage() {
+        window.location.href = "page7.html";
+      }
+
+      function goToNextPage() {
+        // Assuming your next page is named 'page2.html', update as necessary
+        window.location.href = "page9.html";
+      }
+
+      document.addEventListener("DOMContentLoaded", (event) => {
+        setTimeout(function () {
+          document.getElementById("nextButton").disabled = false;
+        }, 7000); // 7000 milliseconds = 7 seconds
+      });
+    </script>
+  </body>
+</html>
